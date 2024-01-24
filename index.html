@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="icon" href="images/favicon.svg" type="image/x-icon"/>
+    <script src="js/script.js"></script>
     <title>Controle Financeiro</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
           <img id="icon__balance" src="images/carteira.svg" alt="Ícone de Carteira"/>
           <h2 class="card__text-balance">Saldo atual:</h2>
         </div>
-        <span class="balance">00</span>
+        <span id="balance"class="balance">0</span>
       </section>
       <div class="cards">
         <section class="card__deposit">
@@ -27,8 +28,8 @@
             <h2 class="card__text-deposit">Depósito</h2>
           </div>
           <p class="card__text-description">Digite o valor do Depósito!</p>
-          <input type="number" id="deposit__amount" min="1" />
-          <button class="card__button">Depositar</button>
+          <input type="number" class="deposit__amount" id="deposit__amount"/>
+          <button onclick="deposit()" class="card__button">Depositar</button>
         </section>
         <section class="card__withdraw">
             <div class="card__withdraw-center">
@@ -36,8 +37,8 @@
               <h2 class="card__text-withdraw">Saque</h2>
             </div>
             <p class="card__text-description">Digite o valor do Saque!</p>
-            <input type="number" id="deposit__amount" min="1" />
-            <button class="card__button">Sacar</button>
+            <input type="number" class="deposit__amount" id="withdraw__amount" min="1" />
+            <button onclick="withdraw()" class="card__button" id="withdraw__amount">Sacar</button>
         </section>
       </div>
     </main>

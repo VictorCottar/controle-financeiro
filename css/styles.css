@@ -121,7 +121,7 @@ main .card__text-description {
     font-weight: 600;
 }
 
-main #deposit__amount {
+main .deposit__amount {
     width: 40%;
     height: 2rem;
     font-size: 1.2rem;
@@ -246,7 +246,7 @@ main #icon__withdraw {
 
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 480px) {
     header {
         height: 9.8rem;
     }
@@ -300,18 +300,18 @@ main #icon__withdraw {
 
 }
 
-@media screen and (max-width: 408px) {
+@media screen and (max-width: 420px) {
     header {
         height: 9rem;
     }
 
     header h1 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     header #icon__header {
-        width: 36px;
-        height: 36px;
+        width: 35px;
+        height: 35px;
     }
 
     main .card__balance {
@@ -354,7 +354,7 @@ main #icon__withdraw {
         font-size: 0.7rem;
     }
 
-    main #deposit__amount {
+    main .deposit__amount {
         height: 1.3rem;
         font-size: 0.9rem;
     }
