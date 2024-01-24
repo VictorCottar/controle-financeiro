@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" href="images/favicon.svg" type="image/x-icon"/>
+    <title>Controle Financeiro</title>
+  </head>
+  <body>
+    <header>
+      <img id="icon__header" src="images/icon-header.svg" alt="Ícone de Dinheiro">
+      <h1>Controle Financeiro</h1>
+    </header>
+    <main>
+      <section class="card__balance">
+        <div class="card__balance-left">
+          <img id="icon__balance" src="images/carteira.svg" alt="Ícone de Carteira"/>
+          <h2 class="card__text-balance">Saldo atual:</h2>
+        </div>
+        <span class="balance">00</span>
+      </section>
+      <div class="cards">
+        <section class="card__deposit">
+          <div class="card__deposit-center">
+            <img  id="icon__deposit"  src="images/deposito.svg"  alt="Ícone de Depósito"/>
+            <h2 class="card__text-deposit">Depósito</h2>
+          </div>
+          <p class="card__text-description">Digite o valor do Depósito!</p>
+          <input type="number" id="deposit__amount" min="1" />
+          <button class="card__button">Depositar</button>
+        </section>
+        <section class="card__withdraw">
+            <div class="card__withdraw-center">
+              <img  id="icon__withdraw"  src="images/microtransacao.png"  alt="Ícone de Saque"/>
+              <h2 class="card__text-withdraw">Saque</h2>
+            </div>
+            <p class="card__text-description">Digite o valor do Saque!</p>
+            <input type="number" id="deposit__amount" min="1" />
+            <button class="card__button">Sacar</button>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

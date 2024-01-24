@@ -1,0 +1,367 @@
+@import url(reset.css);
+
+body {
+    height: 100vh;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 11.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+header #icon__header {
+    width: 90px;
+    height: 90px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    margin-left: 15px;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+/* SALDO */
+
+main .card__balance {
+    width: 60%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightblue;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+}
+
+main .card__balance-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+main #icon__balance {
+    width: 80px;
+    height: 80px;
+}
+
+main .card__text-balance {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+main .balance {
+    font-size: 2.1rem;
+    font-weight: 900;
+}
+
+/* CARDS DE DEPÓSITO E SAQUE*/
+
+main .cards {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 18px;
+}
+
+/*CARD DE DEPÓSITO*/
+
+main .card__deposit {
+    width: 35%;
+    height: 20rem;
+    background-color: lightblue;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+main .card__deposit-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main #icon__deposit {
+    width: 54px;
+    height: 54px;
+}
+
+main .card__text-deposit,
+.card__text-withdraw {
+    font-size: 1.8rem;
+}
+
+main .card__text-description {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+main #deposit__amount {
+    width: 40%;
+    height: 2rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    margin: auto;
+}
+
+main .card__button {
+    width: 50%;
+    height: 3.5rem;
+    margin: auto;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+main .card__button:hover {
+    background-color: white;
+}
+
+/*CARD DE SAQUE*/
+
+main .card__withdraw {
+    width: 35%;
+    height: 20rem;
+    background-color: lightblue;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+main .card__withdraw-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main #icon__withdraw {
+    width: 50px;
+    height: 50px;
+}
+
+/* MEDIAS QUERIES*/
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 10.2rem;
+    }
+
+    header h1 {
+        font-size: 2.1rem;
+    }
+
+    header #icon__header {
+        width: 60px;
+        height: 60px;
+    }
+
+    main {
+        gap: 8px;
+    }
+
+    main .card__balance {
+        height: 3rem;
+        margin-top: 0.9rem;
+    }
+
+    main .card__text-balance {
+        font-size: 1.5rem;
+    }
+
+    main #icon__balance {
+        width: 50px;
+        height: 50px;
+    }
+
+    main .balance {
+        font-size: 1.4rem;
+    }
+
+    main .cards {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 3px;
+    }
+
+    main .card__deposit {
+        width: 70%;
+        height: 12rem;
+        gap: 12px;
+    }
+
+    main .card__text-deposit,
+    .card__text-withdraw {
+        font-size: 1.2rem;
+    }
+
+    main .card__text-description {
+        font-size: 0.9rem;
+    }
+
+    main .card__withdraw {
+        width: 70%;
+        height: 12rem;
+        gap: 12px;
+    }
+
+    main .card__button {
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+    header {
+        height: 9.8rem;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    header #icon__header {
+        width: 45px;
+        height: 45px;
+    }
+
+    main .card__balance {
+        height: 2.6rem;
+        margin-top: 0.9rem;
+    }
+
+    main .card__text-balance {
+        font-size: 1.3rem;
+    }
+
+    main #icon__balance {
+        width: 36px;
+        height: 36px;
+    }
+
+    main .balance {
+        font-size: 1rem;
+    }
+
+    main .card__deposit {
+        width: 80%;
+        height: 12rem;
+    }
+
+    main #icon__deposit {
+        width: 43px;
+        height: 43px;
+    }
+
+    main .card__withdraw {
+        width: 80%;
+        height: 12rem;
+    }
+
+    main #icon__withdraw {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+@media screen and (max-width: 408px) {
+    header {
+        height: 9rem;
+    }
+
+    header h1 {
+        font-size: 1.1rem;
+    }
+
+    header #icon__header {
+        width: 36px;
+        height: 36px;
+    }
+
+    main .card__balance {
+        height: 2rem;
+        margin-top: 0.7rem;
+    }
+
+    main .card__text-balance {
+        font-size: 1.1rem;
+    }
+
+    main .balance {
+        font-size: 0.8rem;
+    }
+
+    main .card__deposit {
+        height: 10rem;
+    }
+
+    main #icon__deposit {
+        width: 40px;
+        height: 40px;
+    }
+
+    main .card__withdraw {
+        height: 10rem;
+    }
+
+    main #icon__withdraw {
+        width: 35px;
+        height: 35px;
+    }
+
+    main .card__text-deposit,
+    .card__text-withdraw {
+        font-size: 1rem;
+    }
+
+    main .card__text-description {
+        font-size: 0.7rem;
+    }
+
+    main #deposit__amount {
+        height: 1.3rem;
+        font-size: 0.9rem;
+    }
+
+    main .card__button {
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+    
+}
