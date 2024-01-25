@@ -51,6 +51,32 @@ main .card__balance {
     border-radius: 8px;
 }
 
+main .button__div-historic {
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main a {
+    text-decoration: none;
+    color: black;
+
+}
+
+main .card__button-historic {
+    width: 100%;
+    height: 2.8rem;
+    margin: auto;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
 main .card__balance-left {
     display: flex;
     justify-content: space-between;
@@ -144,7 +170,8 @@ main .card__button {
     border: 1px solid black;
 }
 
-main .card__button:hover {
+main .card__button:hover,
+.card__button-historic:hover {
     background-color: white;
 }
 
@@ -176,6 +203,27 @@ main #icon__withdraw {
 
 /* MEDIAS QUERIES*/
 
+@media screen and (max-width: 1024px) {
+    main .card__text-balance {
+        font-size: 1.8rem;
+    }
+
+    main #icon__balance {
+        width: 55px;
+        height: 55px;
+    }
+
+    main .card__button-historic {
+        height: 2.2rem;
+        font-size: 0.6rem;
+    }
+
+    main .balance {
+        font-size: 1.3rem;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     header {
         height: 10.2rem;
@@ -194,22 +242,36 @@ main #icon__withdraw {
         gap: 8px;
     }
 
+    main .button__div-historic {
+        width: 17%;
+    }
+
+    main .card__button-historic {
+        height: 1.7rem;
+        font-size: 0.6rem;
+        padding: 5px;
+    }
+
     main .card__balance {
         height: 3rem;
         margin-top: 0.9rem;
     }
 
+    main .card__balance-left {
+        gap: 6px;
+    }
+
     main .card__text-balance {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     main #icon__balance {
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
     }
 
     main .balance {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     main .cards {
@@ -260,22 +322,33 @@ main #icon__withdraw {
         height: 45px;
     }
 
+    main .button__div-historic {
+        width: 20%;
+    }
+
+    main .card__button-historic {
+        height: 1.5rem;
+        font-size: 0.5rem;
+    }
+
     main .card__balance {
+        width: 70%;
         height: 2.6rem;
         margin-top: 0.9rem;
     }
 
     main .card__text-balance {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        white-space: nowrap;
     }
 
     main #icon__balance {
-        width: 36px;
-        height: 36px;
+        width: 30px;
+        height: 30px;
     }
 
     main .balance {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     main .card__deposit {
@@ -302,7 +375,7 @@ main #icon__withdraw {
 
 @media screen and (max-width: 420px) {
     header {
-        height: 9rem;
+        height: 8rem;
     }
 
     header h1 {
@@ -320,7 +393,12 @@ main #icon__withdraw {
     }
 
     main .card__text-balance {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+
+    main #icon__balance {
+        width: 25px;
+        height: 25px;
     }
 
     main .balance {
@@ -363,5 +441,5 @@ main #icon__withdraw {
         height: 2.5rem;
         font-size: 0.9rem;
     }
-    
+
 }
