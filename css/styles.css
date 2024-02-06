@@ -222,6 +222,10 @@ main #icon__withdraw {
         font-size: 1.3rem;
     }
 
+    main #last__withdraw, #last__deposit {
+        font-size: 1.2rem;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -416,6 +420,10 @@ main #icon__withdraw {
 
     main .card__withdraw {
         height: 10rem;
+    }
+
+    main #last__withdraw, #last__deposit {
+        font-size: 0.9rem;
     }
 
     main #icon__withdraw {
