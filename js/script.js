@@ -8,7 +8,7 @@ function deposit() {
 
         document.getElementById('balance').innerText = balanceValue;
 
-        storeValueDeposit();
+        localStorageDeposit();
         localStorageBalance();
         document.getElementById('deposit__amount_input').value = '';
     } else {
@@ -25,25 +25,26 @@ function withdraw() {
 
         document.getElementById('balance').innerText = balanceValue;
 
-        storeValueWithdraw();
+        localStorageWithdraw();
         localStorageBalance();
         document.getElementById('withdraw__amount').value = '';
     } else {
         alert('Digite um número válido para saque!')
         document.getElementById('withdraw__amount').value = ''
     }
+
 }
 
-function storeValueDeposit() {
+function localStorageDeposit() {
     const valueDeposit = document.getElementById('deposit__amount_input').value;
 
     const objDeposit = { valor: valueDeposit };
 
     localStorage.setItem('deposito', JSON.stringify(objDeposit));
 
-};
+}
 
-function storeValueWithdraw() {
+function localStorageWithdraw() {
     const valueWithdraw = document.getElementById('withdraw__amount').value;
 
     const objWithdraw = { valor: valueWithdraw };
@@ -56,23 +57,28 @@ function localStorageBalance() {
     const objBalance = { saldo: balanceValue };
 
     localStorage.setItem('saldo', JSON.stringify(objBalance))
+
 }
 
+window.onload = function catchValueBalance() {
+    const getBalance = JSON.parse(localStorage.getItem('saldo'));
+    
+    balanceValue = getBalance.saldo;
 
-window.onload = function newValueBalance() {
-    const balanceElement = document.getElementById('balance');
+    document.getElementById("balance").innerText = getBalance.saldo;
 
+    historicDeposit();
+    historicWithdraw();
+}
+
+function historicDeposit() {
     const getDeposit = JSON.parse(localStorage.getItem('deposito'));
+
+    document.getElementById("element__last-deposit").innerText = getDeposit.valor; 
+}
+
+function historicWithdraw() {
     const getWithdraw = JSON.parse(localStorage.getItem('saque'));
 
-
-    if (getDeposit) {
-        balanceValue += getDeposit.valor;
-    }
-
-    if (getWithdraw) {
-        balanceValue -= getWithdraw.valor;
-    }
-    balanceElement.innerText = balanceValue;
-
+    document.getElementById("element__last-withdraw").innerText = getWithdraw.valor;
 }
