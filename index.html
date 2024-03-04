@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css"/>
     <link rel="icon" href="images/favicon.svg" type="image/x-icon"/>
     <script src="js/script.js"></script>
     <title>Controle Financeiro</title>
@@ -16,7 +16,7 @@
     <main>
       <section class="card__balance">
         <div class="button__div-historic">
-          <button class="card__button-historic"> <a href="historico.html">Histórico</a></button>
+          <a class="card__button-historic" href="historico.html">Histórico</a>
         </div>
         <div class="card__balance-left">   
           <img id="icon__balance" src="images/carteira.svg" alt="Ícone de Carteira"/>
@@ -31,7 +31,7 @@
             <h2 class="card__text-deposit">Depósito</h2>
           </div>
           <p class="card__text-description">Digite o valor do Depósito!</p>
-          <input type="number" class="deposit__amount" id="deposit__amount_input"/>
+          <input type="number" class="deposit__amount" id="deposit__amount_input" min="0"/>
           <button onclick="deposit();" class="card__button">Depositar</button>
         </section>
         <section class="card__withdraw">

@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans&display=swap');
+@import url('https://fonts.bunny.net/css?family=abeezee:400|abel:400');
 
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', 'Abel', sans-serif;
 }
